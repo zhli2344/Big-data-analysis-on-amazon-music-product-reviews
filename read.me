@@ -1,0 +1,19 @@
+pre-step:
+1. upload config.json and spark_tfh.sh to S3
+
+step:
+1. cluster connfiguration:
+Hive 2.3.4, Spark 2.4.0, Livy 0.5.0, TensorFlow 1.12.0
+
+2. edit software settings
+Load config.json JSON from S3
+
+3. hardware configuration
+select m4.large as master
+select two m4.2xlarge as cores
+
+4.customize boostrap action from S3 by using spark_tfh.sh
+
+5.start EMR notebook when cluster already done
+
+6.run code in EMR notebook

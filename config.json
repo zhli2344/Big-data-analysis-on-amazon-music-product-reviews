@@ -1,0 +1,38 @@
+
+[
+{
+"Classification": "spark-env",
+"Configurations": [
+{
+"Classification": "export",
+"Properties": {
+"PYSPARK_PYTHON": "/usr/bin/python3"
+}
+}
+]
+},
+{
+"Classification": "yarn-env",
+"Properties": {},
+"Configurations": [
+{
+"Classification": "export",
+"Properties": {
+"PYSPARK_PYTHON": "/usr/bin/python3",
+}
+}
+]
+},
+{
+    "Classification": "spark",
+    "Properties": {
+      "maximizeResourceAllocation": "true"
+    }
+},
+{
+    "Classification": "yarn-site",
+    "Properties": {
+        "yarn.nodemanager.vmem-check-enabled": "false"
+    }
+}
+]
