@@ -1,2 +1,3 @@
 # Big-data-analysis-on-amazon-music-product-reviews
-Using Spark, we analyzed the metadata of amazon music product reviews from 1995 to 2015
+Using Spark, we analyzed the metadata of amazon music product reviews from 1995 to 2015.
+Using python and AWS EMR cluster points, a total of four phases, the first stage shows the overall music category review data statistics, the characteristics of the second stage to delete unwanted data, the third stage used Google training general statements of the encoder, the comment will specify product processing as the 512 - dimensional vector, using PCA cosine similarity analysis after feature extraction, the fourth stage is embedded application TF - IDF encoder similarity for further analysis of the product reviews, compare the performance of the encoder and the length of time, for performance tuning.
